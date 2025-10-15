@@ -6,6 +6,14 @@ plugins {
     id 'com.android.library' version "$agpVersion" apply false
     id 'com.github.spotbugs' version '4.8.0' apply false
     id 'checkstyle'
+    id "org.sonarqube" version "6.3.1.5724"
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "GitAli599_AntennaPod"
+    property "sonar.organization", "gitali599"
+  }
 }
 
 project.ext {
